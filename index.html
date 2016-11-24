@@ -276,11 +276,7 @@
             <!-- ATTENTION: BEGIN OF GENERATED CODE. DO NOT EDIT MANUALLY -->
             <div id="Constants" class="showcase showcase_Constants">    <div class="title">Constants</div>
     <div class="subtitle">Constants</div>
-    <div class="desc">Support for constants (also known as "immutable variables"), i.e.,
-variables which cannot be re-assigned new content. Notice: this only
-makes the variable itself immutable, not its assigned content (for
-instance, in case the content is an object, this means the object itself
-can still be altered).</div>
+    <div class="desc">상수 지원 (혹은 "변하지 않는 변수"), 변수에 새로운 값을 다시 할당할 수 없다. 변수만 변하지 않는 것으로 할당된 값은 변경이 가능하다. (예를 들어 값이 객체인 경우 객체 자체는 변경될 수 있다.)</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="mark"><span class="keyword">const</span> PI</span><span class="punctuation"> = </span><span class="literal">3</span><span class="punctuation">.</span><span class="literal">141593</span><span class="semi">;</span>
@@ -306,7 +302,7 @@ PI <span class="punctuation">&gt;</span> <span class="literal">3</span><span cla
 </div>
 <div id="BlockScopedVariables" class="showcase showcase_BlockScopedVariables">    <div class="title">Scoping</div>
     <div class="subtitle">Block-Scoped Variables</div>
-    <div class="desc">Block-scoped variables (and constants) without hoisting.</div>
+    <div class="desc">호이스팅이 되지 않는 블록 단위의 지역 변수(와 상수)</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">for</span> <span class="punctuation">(</span><span class="mark"><span class="keyword">let</span> i</span><span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">;</span> i <span class="punctuation">&lt;</span> a<span class="punctuation">.</span>length<span class="punctuation">;</span> i<span class="punctuation">+</span><span class="punctuation">+</span><span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -356,7 +352,8 @@ callbacks<span class="punctuation">[</span><span class="literal">2</span><span c
 </div>
 <div id="BlockScopedFunctions" class="showcase showcase_BlockScopedFunctions">    <div class="title">Scoping</div>
     <div class="subtitle">Block-Scoped Functions</div>
-    <div class="desc">Block-scoped function definitions.</div>
+    <div class="desc">Block-scoped function definitions.
+블록 단위의 지역 함수 정의가 가능</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="punctuation">{</span>
@@ -391,7 +388,7 @@ callbacks<span class="punctuation">[</span><span class="literal">2</span><span c
 </div>
 <div id="ExpressionBodies" class="showcase showcase_ExpressionBodies">    <div class="title">Arrow Functions</div>
     <div class="subtitle">Expression Bodies</div>
-    <div class="desc">More expressive closure syntax.</div>
+    <div class="desc">더 간단하게 표현할 수 있는 클로저 문법</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code">odds <span class="punctuation"> = </span>evens<span class="punctuation">.</span>map<span class="punctuation">(</span><span class="mark">v <span class="punctuation">=&gt;</span></span> v <span class="punctuation">+</span> <span class="literal">1</span><span class="punctuation">)</span><span class="semi">;</span>
@@ -412,7 +409,7 @@ nums <span class="punctuation"> = </span>evens<span class="punctuation">.</span>
 </div>
 <div id="StatementBodies" class="showcase showcase_StatementBodies">    <div class="title">Arrow Functions</div>
     <div class="subtitle">Statement Bodies</div>
-    <div class="desc">More expressive closure syntax.</div>
+    <div class="desc">더 간단하게 표현할 수 있는 클로저 문법</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code">nums<span class="punctuation">.</span>forEach<span class="punctuation">(</span><span class="mark">v <span class="punctuation">=&gt;</span> <span class="punctuation">{</span></span>
@@ -435,7 +432,7 @@ nums <span class="punctuation"> = </span>evens<span class="punctuation">.</span>
 </div>
 <div id="Lexicalthis" class="showcase showcase_Lexicalthis">    <div class="title">Arrow Functions</div>
     <div class="subtitle">Lexical <code>this</code></div>
-    <div class="desc">More intuitive handling of current object context.</div>
+    <div class="desc">현재 객체 컨텍스트를 더 직관적으로 처리</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="mark"><span class="keyword">this</span></span><span class="punctuation">.</span>nums<span class="punctuation">.</span>forEach<span class="punctuation">(</span><span class="mark"><span class="punctuation">(</span>v<span class="punctuation">)</span> <span class="punctuation">=&gt;</span></span> <span class="punctuation">{</span>
@@ -472,7 +469,7 @@ nums <span class="punctuation"> = </span>evens<span class="punctuation">.</span>
 </div>
 <div id="DefaultParameterValues" class="showcase showcase_DefaultParameterValues">    <div class="title">Extended Parameter Handling</div>
     <div class="subtitle">Default Parameter Values</div>
-    <div class="desc">Simple and intuitive default values for function parameters.</div>
+    <div class="desc">함수 파라미터를 지정할 때, 간단하고 직관적으로 기본 값을 설정 가능.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">function</span> f <span class="punctuation">(</span>x<span class="punctuation">,</span> y <span class="mark">= <span class="literal">7</span></span><span class="punctuation">,</span> z <span class="mark">= <span class="literal">42</span></span><span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -499,7 +496,7 @@ f<span class="punctuation">(</span><span class="literal">1</span><span class="pu
 </div>
 <div id="RestParameter" class="showcase showcase_RestParameter">    <div class="title">Extended Parameter Handling</div>
     <div class="subtitle">Rest Parameter</div>
-    <div class="desc">Aggregation of remaining arguments into single parameter of variadic functions.</div>
+    <div class="desc">인자의 개수가 정해져 있지 않은 함수에서 불필요한 인자를 모아 하나의 파라미터로 지정 가능</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">function</span> f <span class="punctuation">(</span>x<span class="punctuation">,</span> y<span class="punctuation">,</span> <span class="mark"><span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>a</span><span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -523,8 +520,7 @@ f<span class="punctuation">(</span><span class="literal">1</span><span class="pu
 </div>
 <div id="SpreadOperator" class="showcase showcase_SpreadOperator">    <div class="title">Extended Parameter Handling</div>
     <div class="subtitle">Spread Operator</div>
-    <div class="desc">Spreading of elements of an iterable collection (like an array or even
-a string) into both literal elements and individual function parameters.</div>
+    <div class="desc">배열이나 문자열과 같은 반복 가능한 컬렉션의 엘리먼트를 펼쳐 문자로 분리하거나 함수의 개별 인자로 사용할 수 있다.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">var</span> params<span class="punctuation"> = </span><span class="punctuation">[</span> <span class="literal">"hello"</span><span class="punctuation">,</span> true<span class="punctuation">,</span> <span class="literal">7</span> <span class="punctuation">]</span><span class="semi">;</span>
@@ -551,9 +547,7 @@ f<span class="mark"><span class="punctuation">.</span>apply</span><span class="p
 </div>
 <div id="StringInterpolation" class="showcase showcase_StringInterpolation">    <div class="title">Template Literals</div>
     <div class="subtitle">String Interpolation</div>
-    <div class="desc">Intuitive expression interpolation for single-line and multi-line strings.
-(Notice: don't be confused, Template Literals were originally named
-"Template Strings" in the drafts of the ECMAScript 6 language specification)</div>
+    <div class="desc">한 줄이나 여러 줄의 문자열을 표현할 때 직관적으로 문자열을 삽입할 수 있다. </div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">var</span> customer<span class="punctuation"> = </span><span class="punctuation">{</span> name: <span class="literal">"Foo"</span> <span class="punctuation">}</span><span class="semi">;</span>
@@ -578,7 +572,7 @@ a total <span class="keyword">of</span> <span class="mark">$<span class="punctua
 </div>
 <div id="CustomInterpolation" class="showcase showcase_CustomInterpolation">    <div class="title">Template Literals</div>
     <div class="subtitle">Custom Interpolation</div>
-    <div class="desc">Flexible expression interpolation for arbitrary methods.</div>
+    <div class="desc">특정한 메서드에서 문자열을 자유롭게 삽입</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code">get<span class="mark"><span class="literal">`</span>http://example<span class="punctuation">.</span>com/foo?bar=<span class="mark">$<span class="punctuation">{</span></span>bar <span class="punctuation">+</span> baz<span class="mark"><span class="punctuation">}</span></span><span class="punctuation"><span class="punctuation">&amp;</span></span>quux=<span class="mark">$<span class="punctuation">{</span></span>quux<span class="mark"><span class="punctuation">}</span>`</span></span><span class="semi">;</span>
@@ -595,7 +589,7 @@ a total <span class="keyword">of</span> <span class="mark">$<span class="punctua
 </div>
 <div id="RawStringAccess" class="showcase showcase_RawStringAccess">    <div class="title">Template Literals</div>
     <div class="subtitle">Raw String Access</div>
-    <div class="desc">Access the raw template string content (backslashes are not interpreted).</div>
+    <div class="desc">입력된 그대로의 문자열 내용에 접근 가능 (백슬래시가 해석되지 않는 상태)</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">function</span> quux <span class="punctuation">(</span>strings<span class="punctuation">,</span> <span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>values<span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -621,7 +615,7 @@ String<span class="punctuation">.</span>raw <span class="mark"><span class="lite
 </div>
 <div id="BinaryOctalLiteral" class="showcase showcase_BinaryOctalLiteral">    <div class="title">Extended Literals</div>
     <div class="subtitle">Binary & Octal Literal</div>
-    <div class="desc">Direct support for safe binary and octal literals.</div>
+    <div class="desc">안전한 2진, 8진 문자열의 직접 지원</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="mark"><span class="literal">0</span>b</span><span class="literal">111110111</span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span>
@@ -641,7 +635,7 @@ String<span class="punctuation">.</span>raw <span class="mark"><span class="lite
 </div>
 <div id="UnicodeStringRegExpLiteral" class="showcase showcase_UnicodeStringRegExpLiteral">    <div class="title">Extended Literals</div>
     <div class="subtitle">Unicode String & RegExp Literal</div>
-    <div class="desc">Extended support using Unicode within strings and regular expressions.</div>
+    <div class="desc">(*) 문자열과 정규표현식에 포함된 유니코드를 확장 지원</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="literal">"𠮷"</span><span class="punctuation">.</span>length <span class="punctuation">===</span> <span class="literal">2</span><span class="semi">;</span>
@@ -670,7 +664,9 @@ String<span class="punctuation">.</span>raw <span class="mark"><span class="lite
     <div class="subtitle">Regular Expression Sticky Matching</div>
     <div class="desc">Keep the matching position sticky between matches and
 this way support efficient parsing of arbitrary long input strings,
-even with an arbitrary number of distinct regular expressions.</div>
+even with an arbitrary number of distinct regular expressions.
+
+(*) ...</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">let</span> parser<span class="punctuation"> = </span><span class="punctuation">(</span>input<span class="punctuation">,</span> match<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
@@ -729,7 +725,7 @@ parser<span class="punctuation">(</span><span class="literal">"Foo 1 Bar 7 Baz 4
 </div>
 <div id="PropertyShorthand" class="showcase showcase_PropertyShorthand">    <div class="title">Enhanced Object Properties</div>
     <div class="subtitle">Property Shorthand</div>
-    <div class="desc">Shorter syntax for common object property definition idiom.</div>
+    <div class="desc">일반적인 객체의 프로퍼티를 정의할 때 간단한 표현법 지원</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code">obj<span class="punctuation"> = </span><span class="punctuation">{</span> <span class="mark">x</span><span class="punctuation">,</span> <span class="mark">y</span> <span class="punctuation">}</span><span class="semi">;</span>
@@ -746,7 +742,7 @@ parser<span class="punctuation">(</span><span class="literal">"Foo 1 Bar 7 Baz 4
 </div>
 <div id="ComputedPropertyNames" class="showcase showcase_ComputedPropertyNames">    <div class="title">Enhanced Object Properties</div>
     <div class="subtitle">Computed Property Names</div>
-    <div class="desc">Support for computed names in object property definitions.</div>
+    <div class="desc">객체의 프로퍼티 정의에서 계산 결과를 이름으로 사용할 수 있음</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">let</span> obj<span class="punctuation"> = </span><span class="punctuation">{</span>
@@ -769,8 +765,7 @@ parser<span class="punctuation">(</span><span class="literal">"Foo 1 Bar 7 Baz 4
 </div>
 <div id="MethodProperties" class="showcase showcase_MethodProperties">    <div class="title">Enhanced Object Properties</div>
     <div class="subtitle">Method Properties</div>
-    <div class="desc">Support for method notation in object property definitions,
-for both regular functions and generator functions.</div>
+    <div class="desc">객체의 프로퍼티를 정의할 때 일반 함수와 제너레이터 함수 모두 메서드 표기법을 지원. </div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code">obj<span class="punctuation"> = </span><span class="punctuation">{</span>
@@ -806,7 +801,7 @@ for both regular functions and generator functions.</div>
 </div>
 <div id="ArrayMatching" class="showcase showcase_ArrayMatching">    <div class="title">Destructuring Assignment</div>
     <div class="subtitle">Array Matching</div>
-    <div class="desc">Intuitive and flexible destructuring of Arrays into individual variables during assignment.</div>
+    <div class="desc">할당하는 동안 직관적이고 유연하게 배열을 개별 변수로 전환</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">var</span> list<span class="punctuation"> = </span><span class="punctuation">[</span> <span class="literal">1</span><span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">,</span> <span class="literal">3</span> <span class="punctuation">]</span><span class="semi">;</span>
@@ -827,7 +822,7 @@ for both regular functions and generator functions.</div>
 </div>
 <div id="ObjectMatchingShorthandNotation" class="showcase showcase_ObjectMatchingShorthandNotation">    <div class="title">Destructuring Assignment</div>
     <div class="subtitle">Object Matching, Shorthand Notation</div>
-    <div class="desc">Intuitive and flexible destructuring of Objects into individual variables during assignment.</div>
+    <div class="desc">할당하는 동안 직관적이고 유연하게 객체를 개별 변수로 전환</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">var</span> <span class="mark"><span class="punctuation">{</span> op<span class="punctuation">,</span> lhs<span class="punctuation">,</span> rhs <span class="punctuation">}</span></span><span class="punctuation"> = </span>getASTNode<span class="punctuation">(</span><span class="punctuation">)</span><span class="semi">;</span>
@@ -847,7 +842,7 @@ for both regular functions and generator functions.</div>
 </div>
 <div id="ObjectMatchingDeepMatching" class="showcase showcase_ObjectMatchingDeepMatching">    <div class="title">Destructuring Assignment</div>
     <div class="subtitle">Object Matching, Deep Matching</div>
-    <div class="desc">Intuitive and flexible destructuring of Objects into individual variables during assignment.</div>
+    <div class="desc">할당하는 동안 직관적이고 유연하게 객체를 개별 변수로 전환</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">var</span> <span class="punctuation">{</span> op: a<span class="punctuation">,</span> <span class="mark">lhs: <span class="punctuation">{</span> op: b <span class="punctuation">}</span></span><span class="punctuation">,</span> rhs: c <span class="punctuation">}</span><span class="punctuation"> = </span>getASTNode<span class="punctuation">(</span><span class="punctuation">)</span><span class="semi">;</span>
@@ -867,7 +862,7 @@ for both regular functions and generator functions.</div>
 </div>
 <div id="ParameterContextMatching" class="showcase showcase_ParameterContextMatching">    <div class="title">Destructuring Assignment</div>
     <div class="subtitle">Parameter Context Matching</div>
-    <div class="desc">Intuitive and flexible destructuring of Arrays and Objects into individual parameters during function calls.</div>
+    <div class="desc">함수를 호출하는 동안 직관적이고 유연하게 객체와 배열을 개별 인자로 전환</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">function</span> f <span class="punctuation">(</span><span class="mark"><span class="punctuation">[</span> name<span class="punctuation">,</span> val <span class="punctuation">]</span></span><span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -912,7 +907,7 @@ h<span class="punctuation">(</span><span class="punctuation">{</span> name: <spa
 </div>
 <div id="FailSoftDestructuring" class="showcase showcase_FailSoftDestructuring">    <div class="title">Destructuring Assignment</div>
     <div class="subtitle">Fail-Soft Destructuring</div>
-    <div class="desc">Fail-soft destructuring, optionally with defaults.</div>
+    <div class="desc">개별 변수로 변환하면서 기본 값 지정 가능</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">var</span> list<span class="punctuation"> = </span><span class="punctuation">[</span> <span class="literal">7</span><span class="punctuation">,</span> <span class="literal">42</span> <span class="punctuation">]</span><span class="semi">;</span>
@@ -942,7 +937,7 @@ d <span class="punctuation">===</span> <span class="mark">undefined</span><span 
 </div>
 <div id="ValueExportImport" class="showcase showcase_ValueExportImport">    <div class="title">Modules</div>
     <div class="subtitle">Value Export/Import</div>
-    <div class="desc">Support for exporting/importing values from/to modules without global namespace pollution.</div>
+    <div class="desc">글로벌 네임스페이스와 무관하게 모듈로부터/모듈로 값을 export하거나 import할 수 있음</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="comment">//  lib/math<span class="punctuation">.</span>js</span>
@@ -980,7 +975,8 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span><s
 </div>
 <div id="DefaultWildcard" class="showcase showcase_DefaultWildcard">    <div class="title">Modules</div>
     <div class="subtitle">Default & Wildcard</div>
-    <div class="desc">Marking a value as the default exported value and mass-mixin of values.</div>
+    <div class="desc">Marking a value as the default exported value and mass-mixin of values.
+(*) export되는 값에 기본값을 설정하고 값을 mixin 할 수 있음</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="comment">//  lib/mathplusplus<span class="punctuation">.</span>js</span>
@@ -1014,7 +1010,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span><s
 </div>
 <div id="ClassDefinition" class="showcase showcase_ClassDefinition">    <div class="title">Classes</div>
     <div class="subtitle">Class Definition</div>
-    <div class="desc">More intuitive, OOP-style and boilerplate-free classes.</div>
+    <div class="desc">직관적인 OOP 스타일과 보일러플레이트가 없는 클래스</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="mark"><span class="keyword">class</span></span> Shape <span class="punctuation">{</span>
@@ -1047,7 +1043,7 @@ Shape<span class="punctuation">.</span><span class="mark">prototype<span class="
 </div>
 <div id="ClassInheritance" class="showcase showcase_ClassInheritance">    <div class="title">Classes</div>
     <div class="subtitle">Class Inheritance</div>
-    <div class="desc">More intuitive, OOP-style and boilerplate-free inheritance.</div>
+    <div class="desc">직관적인 OOP 스타일과 보일러플레이트가 없는 상속</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="mark"><span class="keyword">class</span></span> Rectangle <span class="mark"><span class="keyword">extends</span></span> Shape <span class="punctuation">{</span>
@@ -1090,7 +1086,9 @@ Shape<span class="punctuation">.</span><span class="mark">prototype<span class="
     <div class="subtitle">Class Inheritance, From Expressions</div>
     <div class="desc">Support for mixin-style inheritance by extending from expressions yielding
 function objects. [Notice: the generic <code>aggregation</code> function is usually provided
-by a library like <a href="https://github.com/rse/aggregation">this one</a>, of course]</div>
+by a library like <a href="https://github.com/rse/aggregation">this one</a>, of course]
+
+(*) </div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">var</span> <span class="mark">aggregation</span><span class="punctuation"> = </span><span class="punctuation">(</span>baseClass<span class="punctuation">,</span> <span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>mixins<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
@@ -1214,7 +1212,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span>re
 </div>
 <div id="BaseClassAccess" class="showcase showcase_BaseClassAccess">    <div class="title">Classes</div>
     <div class="subtitle">Base Class Access</div>
-    <div class="desc">Intuitive access to base class constructor and methods.</div>
+    <div class="desc">기본 클래스 생성자와 메서드에 직관적으로 접근 가능</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">class</span> Shape <span class="punctuation">{</span>
@@ -1273,7 +1271,7 @@ Circle<span class="mark"><span class="punctuation">.</span>prototype<span class=
 </div>
 <div id="StaticMembers" class="showcase showcase_StaticMembers">    <div class="title">Classes</div>
     <div class="subtitle">Static Members</div>
-    <div class="desc">Simple support for static class members.</div>
+    <div class="desc">스태틱 클래스 변수를 지원</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">class</span> Rectangle <span class="keyword">extends</span> Shape <span class="punctuation">{</span>
@@ -1317,7 +1315,9 @@ Circle<span class="mark"><span class="punctuation">.</span>prototype<span class=
 <div id="GetterSetter" class="showcase showcase_GetterSetter">    <div class="title">Classes</div>
     <div class="subtitle">Getter/Setter</div>
     <div class="desc">Getter/Setter also directly within classes (and not just within object
-initializers, as it is possible since ECMAScript 5.1).</div>
+initializers, as it is possible since ECMAScript 5.1).
+
+(*) 클래스 내에 직접 Getter/Setter 지원</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">class</span> Rectangle <span class="punctuation">{</span>
@@ -1687,7 +1687,7 @@ based on generator functions.</div>
 </div>
 <div id="SetDataStructure" class="showcase showcase_SetDataStructure">    <div class="title">Map/Set & WeakMap/WeakSet</div>
     <div class="subtitle">Set Data-Structure</div>
-    <div class="desc">Cleaner data-structure for common algorithms based on sets.</div>
+    <div class="desc">set을 사용하는 일반적인 알고리듬을 위한 깔끔한 데이터 스트럭쳐</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">let</span> s<span class="punctuation"> = </span><span class="mark"><span class="keyword">new</span> Set<span class="punctuation">(</span><span class="punctuation">)</span></span><span class="semi">;</span>
@@ -1715,7 +1715,7 @@ s<span class="punctuation">.</span><span class="mark">has<span class="punctuatio
 </div>
 <div id="MapDataStructure" class="showcase showcase_MapDataStructure">    <div class="title">Map/Set & WeakMap/WeakSet</div>
     <div class="subtitle">Map Data-Structure</div>
-    <div class="desc">Cleaner data-structure for common algorithms based on maps.</div>
+    <div class="desc">map을 사용하는 일반적인 알고리듬을 위한 깔끔한 데이터 스트럭쳐</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">let</span> m<span class="punctuation"> = </span><span class="mark"><span class="keyword">new</span> Map<span class="punctuation">(</span><span class="punctuation">)</span></span><span class="semi">;</span>
@@ -1789,8 +1789,7 @@ isMarked<span class="punctuation">.</span>has<span class="punctuation">(</span>f
 </div>
 <div id="TypedArrays" class="showcase showcase_TypedArrays">    <div class="title">Typed Arrays</div>
     <div class="subtitle">Typed Arrays</div>
-    <div class="desc">Support for arbitrary byte-based data structures to implement network
-protocols, cryptography algorithms, file format manipulations, etc.</div>
+    <div class="desc">네트워크 프로토콜, 암호화 알고리즘, 파일 포맷 조작등을 위한 임의의 바이트 기반의 데이터 구조를 지원</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="comment">//  ES<span class="literal">6</span> <span class="keyword">class</span> equivalent to the following C structure:</span><span class="comment">
@@ -1832,8 +1831,7 @@ example<span class="punctuation">.</span><span class="mark">amountDue</span><spa
 </div>
 <div id="ObjectPropertyAssignment" class="showcase showcase_ObjectPropertyAssignment">    <div class="title">New Built-In Methods</div>
     <div class="subtitle">Object Property Assignment</div>
-    <div class="desc">New function for assigning enumerable properties of one or more source
-objects onto a destination object.</div>
+    <div class="desc">하나 이상의 소스 객체에서 대상 객체로 프로퍼티를 추가 할당할 수 있는 새로운 함수</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">var</span> dst <span class="punctuation"> = </span><span class="punctuation">{</span> quux: <span class="literal">0</span> <span class="punctuation">}</span><span class="semi">;</span>
@@ -1869,7 +1867,7 @@ dst<span class="punctuation">.</span>baz  <span class="punctuation">===</span> <
 </div>
 <div id="ArrayElementFinding" class="showcase showcase_ArrayElementFinding">    <div class="title">New Built-In Methods</div>
     <div class="subtitle">Array Element Finding</div>
-    <div class="desc">New function for finding an element in an array.</div>
+    <div class="desc">배열에서 엘리먼트를 찾는 새로운 함수</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="punctuation">[</span> <span class="literal">1</span><span class="punctuation">,</span> <span class="literal">3</span><span class="punctuation">,</span> <span class="literal">4</span><span class="punctuation">,</span> <span class="literal">2</span> <span class="punctuation">]</span><span class="punctuation">.</span><span class="mark">find</span><span class="punctuation">(</span><span class="mark">x <span class="punctuation">=&gt;</span></span> x <span class="punctuation">&gt;</span> <span class="literal">3</span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // <span class="literal">4</span></span>
@@ -1886,7 +1884,7 @@ dst<span class="punctuation">.</span>baz  <span class="punctuation">===</span> <
 </div>
 <div id="StringRepeating" class="showcase showcase_StringRepeating">    <div class="title">New Built-In Methods</div>
     <div class="subtitle">String Repeating</div>
-    <div class="desc">New string repeating functionality.</div>
+    <div class="desc">스트링 반복 기능</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="literal">" "</span><span class="punctuation">.</span><span class="mark">repeat</span><span class="punctuation">(</span><span class="literal">4</span> <span class="punctuation">*</span> depth<span class="punctuation">)</span><span class="semi">;</span>
@@ -1905,7 +1903,7 @@ dst<span class="punctuation">.</span>baz  <span class="punctuation">===</span> <
 </div>
 <div id="StringSearching" class="showcase showcase_StringSearching">    <div class="title">New Built-In Methods</div>
     <div class="subtitle">String Searching</div>
-    <div class="desc">New specific string functions to search for a sub-string.</div>
+    <div class="desc">다양한 조건의 일부 문자열을 찾는 문자열 함수</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="literal">"hello"</span><span class="punctuation">.</span><span class="mark">startsWith</span><span class="punctuation">(</span><span class="literal">"ello"</span><span class="punctuation">,</span> <span class="literal">1</span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // true</span>
@@ -1930,7 +1928,7 @@ dst<span class="punctuation">.</span>baz  <span class="punctuation">===</span> <
 </div>
 <div id="NumberTypeChecking" class="showcase showcase_NumberTypeChecking">    <div class="title">New Built-In Methods</div>
     <div class="subtitle">Number Type Checking</div>
-    <div class="desc">New functions for checking for non-numbers and finite numbers.</div>
+    <div class="desc">숫자가 아닌 값과 무한수를 확인하는 새로운 함수</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code">Number<span class="punctuation">.</span><span class="mark">isNaN</span><span class="punctuation">(</span><span class="literal">42</span><span class="punctuation">)</span> <span class="punctuation">===</span> false<span class="semi">;</span>
@@ -1967,7 +1965,9 @@ isFinite<span class="punctuation">(</span><span class="literal">123</span><span 
     <div class="subtitle">Number Safety Checking</div>
     <div class="desc">Checking whether an integer number is in the safe range, i.e., it is
 correctly represented by JavaScript (where all numbers, including
-integer numbers, are technically floating point number).</div>
+integer numbers, are technically floating point number).
+
+(*) 정수가 자바스크립트에서 올바로 표현되는 안전한 범위에 있는지 확인하는 함수.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code">Number<span class="punctuation">.</span><span class="mark">isSafeInteger</span><span class="punctuation">(</span><span class="literal">42</span><span class="punctuation">)</span> <span class="punctuation">===</span> true<span class="semi">;</span>
@@ -1994,8 +1994,8 @@ Number<span class="punctuation">.</span><span class="mark">isSafeInteger</span><
 </div>
 <div id="NumberComparison" class="showcase showcase_NumberComparison">    <div class="title">New Built-In Methods</div>
     <div class="subtitle">Number Comparison</div>
-    <div class="desc">Availability of a standard Epsilon value for more precise comparison of
-floating point numbers.</div>
+    <div class="desc">부동 소수점 숫자를 더 정확히 비교하기 위한 표준 입실론 값을 사용할 수 있음
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Number/EPSILON</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code">console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="literal">0</span><span class="punctuation">.</span><span class="literal">1</span> <span class="punctuation">+</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">2</span> <span class="punctuation">===</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">3</span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // false</span>
@@ -2014,8 +2014,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span>Ma
 </div>
 <div id="NumberTruncation" class="showcase showcase_NumberTruncation">    <div class="title">New Built-In Methods</div>
     <div class="subtitle">Number Truncation</div>
-    <div class="desc">Truncate a floating point number to its integral part,
-completely dropping the fractional part.</div>
+    <div class="desc">부동 소수점 숫자의 소수 부분을 버림</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code">console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>trunc</span><span class="punctuation">(</span><span class="literal">42</span><span class="punctuation">.</span><span class="literal">7</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="comment"> // <span class="literal">42</span></span>
@@ -2039,7 +2038,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span>ma
 </div>
 <div id="NumberSignDetermination" class="showcase showcase_NumberSignDetermination">    <div class="title">New Built-In Methods</div>
     <div class="subtitle">Number Sign Determination</div>
-    <div class="desc">Determine the sign of a number, including special cases of signed zero and non-number.</div>
+    <div class="desc">숫자의 부호를 판별. 부호가 포함된 0이나 숫자가 아닌 경우를 포함</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code">console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>sign</span><span class="punctuation">(</span><span class="literal">7</span><span class="punctuation">)</span><span class="punctuation">)</span>  <span class="comment"> // <span class="literal">1</span></span>
@@ -2067,7 +2066,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span>ma
 </div>
 <div id="PromiseUsage" class="showcase showcase_PromiseUsage">    <div class="title">Promises</div>
     <div class="subtitle">Promise Usage</div>
-    <div class="desc">First class representation of a value that may be made asynchronously and be available in the future.</div>
+    <div class="desc">비동기적으로 결정되어 차후에 사용가능한 값을 일차 클래스로 표현</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">function</span> msgAfterTimeout <span class="punctuation">(</span>msg<span class="punctuation">,</span> who<span class="punctuation">,</span> timeout<span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -2102,8 +2101,7 @@ msgAfterTimeout<span class="punctuation">(</span><span class="literal">""</span>
 </div>
 <div id="PromiseCombination" class="showcase showcase_PromiseCombination">    <div class="title">Promises</div>
     <div class="subtitle">Promise Combination</div>
-    <div class="desc">Combine one or more promises into new promises without having to take
-care of ordering of the underlying asynchronous operations yourself.</div>
+    <div class="desc">비동기 연산의 순서를 직접 관리하지 않고도 하나 이상의 프라미스를 새로운 프라미스로 엮을 수 있다.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">function</span> fetchAsync <span class="punctuation">(</span>url<span class="punctuation">,</span> timeout<span class="punctuation">,</span> onData<span class="punctuation">,</span> onError<span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -2162,7 +2160,8 @@ care of ordering of the underlying asynchronous operations yourself.</div>
 </div>
 <div id="Proxying" class="showcase showcase_Proxying">    <div class="title">Meta-Programming</div>
     <div class="subtitle">Proxying</div>
-    <div class="desc">Hooking into runtime-level object meta-operations.</div>
+    <div class="desc">Hooking into runtime-level object meta-operations.
+(*) 실행시에 객체의 메타 연산을 가로챔</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">let</span> target<span class="punctuation"> = </span><span class="punctuation">{</span>
@@ -2188,7 +2187,8 @@ proxy<span class="punctuation">.</span><span class="mark">world</span> <span cla
 </div>
 <div id="Reflection" class="showcase showcase_Reflection">    <div class="title">Meta-Programming</div>
     <div class="subtitle">Reflection</div>
-    <div class="desc">Make calls corresponding to the object meta-operations.</div>
+    <div class="desc">Make calls corresponding to the object meta-operations.
+(*)</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">let</span> obj<span class="punctuation"> = </span><span class="punctuation">{</span> a: <span class="literal">1</span> <span class="punctuation">}</span><span class="semi">;</span>
@@ -2212,7 +2212,9 @@ Object<span class="punctuation">.</span>defineProperty<span class="punctuation">
 <div id="Collation" class="showcase showcase_Collation">    <div class="title">Internationalization & Localization</div>
     <div class="subtitle">Collation</div>
     <div class="desc">Sorting a set of strings and searching within a set of strings.
-Collation is parameterized by locale and aware of Unicode.</div>
+Collation is parameterized by locale and aware of Unicode.
+(*) 문자열의 셋을 정렬하고 해당 셋 내에서 검색.
+문자의 비교는 로케일과 유니코드에 따라 지정된다.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="comment">// <span class="keyword">in</span> German<span class="punctuation">,</span>  <span class="literal">"ä"</span> sorts with <span class="literal">"a"</span></span><span class="comment">
@@ -2237,7 +2239,8 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span>li
 </div>
 <div id="NumberFormatting" class="showcase showcase_NumberFormatting">    <div class="title">Internationalization & Localization</div>
     <div class="subtitle">Number Formatting</div>
-    <div class="desc">Format numbers with digit grouping and localized separators.</div>
+    <div class="desc">Format numbers with digit grouping and localized separators.
+지역화된 구분자로 숫자를 구분지어 표현</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">var</span> l<span class="literal">10</span>nEN<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>NumberFormat<span class="punctuation">(</span><span class="mark"><span class="literal">"en<span class="punctuation">-</span>US"</span></span><span class="punctuation">)</span><span class="semi">;</span>
@@ -2257,29 +2260,10 @@ l<span class="literal">10</span>nDE<span class="punctuation">.</span>format<span
 </div>
 <div id="CurrencyFormatting" class="showcase showcase_CurrencyFormatting">    <div class="title">Internationalization & Localization</div>
     <div class="subtitle">Currency Formatting</div>
-    <div class="desc">Format numbers with digit grouping, localized separators and attached currency symbol.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">var</span> l<span class="literal">10</span>nUSD<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>NumberFormat<span class="punctuation">(</span><span class="literal">"en<span class="punctuation">-</span>US"</span><span class="punctuation">,</span> <span class="punctuation">{</span> style: <span class="literal">"currency"</span><span class="punctuation">,</span> currency: <span class="mark"><span class="literal">"USD"</span></span> <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="keyword">var</span> l<span class="literal">10</span>nGBP<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>NumberFormat<span class="punctuation">(</span><span class="literal">"en<span class="punctuation">-</span>GB"</span><span class="punctuation">,</span> <span class="punctuation">{</span> style: <span class="literal">"currency"</span><span class="punctuation">,</span> currency: <span class="mark"><span class="literal">"GBP"</span></span> <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="keyword">var</span> l<span class="literal">10</span>nEUR<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>NumberFormat<span class="punctuation">(</span><span class="literal">"de<span class="punctuation">-</span>DE"</span><span class="punctuation">,</span> <span class="punctuation">{</span> style: <span class="literal">"currency"</span><span class="punctuation">,</span> currency: <span class="mark"><span class="literal">"EUR"</span></span> <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
-l<span class="literal">10</span>nUSD<span class="punctuation">.</span>format<span class="punctuation">(</span><span class="literal">100200300</span><span class="punctuation">.</span><span class="literal">40</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="literal">"$100<span class="punctuation">,</span>200<span class="punctuation">,</span>300<span class="punctuation">.</span>40"</span></span><span class="semi">;</span>
-l<span class="literal">10</span>nGBP<span class="punctuation">.</span>format<span class="punctuation">(</span><span class="literal">100200300</span><span class="punctuation">.</span><span class="literal">40</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="literal">"£100<span class="punctuation">,</span>200<span class="punctuation">,</span>300<span class="punctuation">.</span>40"</span></span><span class="semi">;</span>
-l<span class="literal">10</span>nEUR<span class="punctuation">.</span>format<span class="punctuation">(</span><span class="literal">100200300</span><span class="punctuation">.</span><span class="literal">40</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="literal">"100<span class="punctuation">.</span>200<span class="punctuation">.</span>300<span class="punctuation">,</span>40 €"</span></span><span class="semi">;</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">// no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
 </div>
 <div id="DateTimeFormatting" class="showcase showcase_DateTimeFormatting">    <div class="title">Internationalization & Localization</div>
     <div class="subtitle">Date/Time Formatting</div>
-    <div class="desc">Format date/time with localized ordering and separators.</div>
+    <div class="desc">지역화된 순서와 구분자로 날짜/시간을 표현</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">var</span> l<span class="literal">10</span>nEN<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>DateTimeFormat<span class="punctuation">(</span><span class="mark"><span class="literal">"en<span class="punctuation">-</span>US"</span></span><span class="punctuation">)</span><span class="semi">;</span>
